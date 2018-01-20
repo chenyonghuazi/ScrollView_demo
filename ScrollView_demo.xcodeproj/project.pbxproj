@@ -12,6 +12,8 @@
 		E86B522F20139D3600B0DBFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86B522D20139D3600B0DBFC /* Main.storyboard */; };
 		E86B523120139D3600B0DBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86B523020139D3600B0DBFC /* Assets.xcassets */; };
 		E86B523420139D3600B0DBFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86B523220139D3600B0DBFC /* LaunchScreen.storyboard */; };
+		E86B523E2013DEB800B0DBFC /* collectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B523D2013DEB800B0DBFC /* collectionView.swift */; };
+		E86B52402013E92600B0DBFC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B523F2013E92600B0DBFC /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E86B523020139D3600B0DBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E86B523320139D3600B0DBFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E86B523520139D3600B0DBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86B523D2013DEB800B0DBFC /* collectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionView.swift; sourceTree = "<group>"; };
+		E86B523F2013E92600B0DBFC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				E86B522920139D3600B0DBFC /* AppDelegate.swift */,
 				E86B522B20139D3600B0DBFC /* ViewController.swift */,
+				E86B523F2013E92600B0DBFC /* CollectionViewCell.swift */,
 				E86B522D20139D3600B0DBFC /* Main.storyboard */,
 				E86B523020139D3600B0DBFC /* Assets.xcassets */,
 				E86B523220139D3600B0DBFC /* LaunchScreen.storyboard */,
 				E86B523520139D3600B0DBFC /* Info.plist */,
+				E86B523D2013DEB800B0DBFC /* collectionView.swift */,
 			);
 			path = ScrollView_demo;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86B523E2013DEB800B0DBFC /* collectionView.swift in Sources */,
 				E86B522C20139D3600B0DBFC /* ViewController.swift in Sources */,
+				E86B52402013E92600B0DBFC /* CollectionViewCell.swift in Sources */,
 				E86B522A20139D3600B0DBFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,11 +285,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCPU83AAPV;
 				INFOPLIST_FILE = ScrollView_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Edwin.ScrollView-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +301,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCPU83AAPV;
 				INFOPLIST_FILE = ScrollView_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Edwin.ScrollView-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
